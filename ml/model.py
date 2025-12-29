@@ -67,7 +67,7 @@ def train_model():
     X_test_scaled = scaler.transform(X_test)
 
     # 3. Model training
-    model = MLPClassifier(hidden_layer_sizes=(16, 8), max_iter=1000, random_state=42)
+    model = MLPClassifier(hidden_layer_sizes=(16, 8), max_iter=1500, random_state=42)
     model.fit(X_train_scaled, y_train)
 
     # 4. Accuracy calculation
